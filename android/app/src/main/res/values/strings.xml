@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">loginAngularBlank</string>
+    <string name="title_activity_main">loginAngularBlank</string>
+    <string name="package_name">com.alexcataguases.login</string>
+    <string name="custom_url_scheme">com.alexcataguases.login</string>
+</resources>

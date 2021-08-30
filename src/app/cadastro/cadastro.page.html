@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar  color="danger">
+    <ion-title>Cadastrar Usuário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Nome: </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Telefone: </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.telefone"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>E-Mail: </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Senha: </ion-label>
+    <ion-input type="password" [(ngModel)]="formulario.senha"></ion-input>
+  </ion-item>
+
+  
+  <ion-button expand="block" color="primary" (click)="cadastro()">Cadastrar</ion-button>
+
+
+  <br />
+  <ion-list-header style="display:block; text-align: center;">
+  <ion-label style="font-size: 0.7em;"><a href="login">Voltar para login.</a></ion-label>
+  </ion-list-header>
+  <br />
+
+
+</ion-content>

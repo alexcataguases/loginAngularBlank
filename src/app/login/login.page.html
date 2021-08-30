@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar  color="danger">
+    <ion-title>Agenda de Contatos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-item>
+    <ion-label>E-Mail: </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.email" placeholder="aa@bbb.com"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Senha: </ion-label>
+    <ion-input type="password" [(ngModel)]="formulario.senha" placeholder="xxx"></ion-input>
+  </ion-item>
+
+  
+  <ion-button expand="block" color="primary" (click)="verifica()">Acessar Sistema</ion-button>
+  
+  <br />
+  <ion-list-header style="display:block; text-align: center;">
+  <ion-label style="font-size: 0.7em;"><a href="cadastro">Ainda não tenho cadastro.</a></ion-label>
+  </ion-list-header>
+  <br />
+
+  
+
+</ion-content>

@@ -1,20 +1,37 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-title>
-      Blank
+      Agenda de Contatos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <br>
+  
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-item *ngFor="let usuario of lista">
+
+      <ion-label>&nbsp;{{usuario.nome}}</ion-label>
+      <p item-right></p>
+      <ion-button  color="primary" href="https://wa.me/5532{{usuario.telefone}}?text=Olá, vamos conversar?">
+      <ion-icon slot="end" name="logo-whatsapp"></ion-icon>
+      {{usuario.telefone}}
+      </ion-button>
+
+    </ion-item>
+</ion-list>
+
+
+<ion-fab vertical="top" horizontal="end" slot="fixed" edge>
+  <ion-fab-button color="success">
+    <div>{{logado}}</div>
+  </ion-fab-button>
+  <ion-fab-list side="botton">
+    <ion-fab-button (click)="sair()" color="success">Sair</ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
+
 </ion-content>

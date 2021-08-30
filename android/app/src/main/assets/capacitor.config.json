@@ -1,0 +1,6 @@
+{
+	"appId": "com.alexcataguases.login",
+	"appName": "loginAngularBlank",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
