@@ -10,7 +10,7 @@ import { Router } from '@angular/router';//ALEX-------
 export class CadastroPage implements OnInit {
 
   constructor(public http: HttpClient, private router: Router) { }
-
+//nada de diferente
 
   formulario: any = {email: '', senha: '', telefone: '', nome: ''};
 
